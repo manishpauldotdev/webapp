@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webapp/constants/colors.dart';
 import 'package:webapp/constants/nav_items.dart';
+import 'package:webapp/styles/styles.dart';
 import 'package:webapp/widgets/site_logo.dart';
 
 class HeaderDesktop extends StatelessWidget {
@@ -12,15 +13,7 @@ class HeaderDesktop extends StatelessWidget {
       height: 60,
       margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
       width: double.maxFinite,
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [
-            Colors.transparent,
-            CustomColor.bgLight1,
-          ],
-        ),
-        borderRadius: BorderRadius.circular(100),
-      ),
+      decoration: kHeaderDecoration,
       child: Row(
         children: [
           SiteLogo(
